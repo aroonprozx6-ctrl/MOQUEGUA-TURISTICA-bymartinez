@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Galería - Moquegua Turística</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <header>
+        <h1>Moquegua Turística</h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="lugares.html">Lugares turísticos</a>
+            <a href="galeria.html" class="activo">Galería</a>
+            <a href="juego.html">Juego</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="banner">
+            <h2>Galería de imágenes</h2>
+            <p>Descubre los principales atractivos turísticos de la región Moquegua.</p>
+        </section>
+
+        <!-- Botones de filtrado -->
+        <section class="categorias">
+            <button type="button" class="seleccionado" data-filtro="todos">Todos</button>
+            <button type="button" data-filtro="mariscal">Mariscal Nieto</button>
+            <button type="button" data-filtro="sanchez-cerro">General Sánchez Cerro</button>
+            <button type="button" data-filtro="ilo">Ilo</button>
+        </section>
+
+        <section class="galeria">
+            <!-- MARISCAL NIETO -->
+            <article class="tarjeta" data-categoria="mariscal">
+                <img src="imagenes/plaza-de-armas.jpg" alt="Plaza de Armas de Moquegua">
+                <div class="informacion">
+                    <h3>Plaza de Armas</h3>
+                    <p>Moquegua - Mariscal Nieto</p>
+                </div>
+            </article>
+
+            <article class="tarjeta" data-categoria="mariscal">
+                <img src="imagenes/geoglifos-de-chenchen.jpg" alt="Geoglifos de Chen Chen">
+                <div class="informacion">
+                    <h3>Geoglifos de Chen Chen</h3>
+                    <p>Moquegua - Mariscal Nieto</p>
+                </div>
+            </article>
+
+            <article class="tarjeta" data-categoria="mariscal">
+                <img src="imagenes/Sitio-Arqueologico-Cerro-Baul.webp" alt="Cerro Baúl">
+                <div class="informacion">
+                    <h3>Cerro Baúl</h3>
+                    <p>Torata - Mariscal Nieto</p>
+                </div>
+            </article>
+
+            <!-- GENERAL SÁNCHEZ CERRO -->
+            <article class="tarjeta" data-categoria="sanchez-cerro">
+                <img src="imagenes/volcan-ubinas.jpg" alt="Volcán Ubinas">
+                <div class="informacion">
+                    <h3>Volcán Ubinas</h3>
+                    <p>Ubinas - General Sánchez Cerro</p>
+                </div>
+            </article>
+
+            <article class="tarjeta" data-categoria="sanchez-cerro">
+                <img src="imagenes/valle-omate.jpg" alt="Valle de Omate">
+                <div class="informacion">
+                    <h3>Valle de Omate</h3>
+                    <p>Omate - General Sánchez Cerro</p>
+                </div>
+            </article>
+
+            <!-- ILO -->
+            <article class="tarjeta" data-categoria="ilo">
+                <img src="imagenes/lugares-turisticos-de-puerto-de-ilo.webp" alt="Puerto de Ilo">
+                <div class="informacion">
+                    <h3>Puerto de Ilo</h3>
+                    <p>Ilo - Provincia de Ilo</p>
+                </div>
+            </article>
+
+            <article class="tarjeta" data-categoria="ilo">
+                <img src="imagenes/playa-pozo-lisas.jpg" alt="Playa Pozo de Lizas">
+                <div class="informacion">
+                    <h3>Playa Pozo de Lizas</h3>
+                    <p>Ilo - Provincia de Ilo</p>
+                </div>
+            </article>
+
+            <article class="tarjeta" data-categoria="ilo">
+                <img src="imagenes/glorieta-de-ilo.jpg" alt="Glorieta de Ilo">
+                <div class="informacion">
+                    <h3>Glorieta de Ilo</h3>
+                    <p>Ilo - Provincia de Ilo</p>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Moquegua Turística - Conoce nuestra región | 2026</p>
+    </footer>
+
+    <!-- El script va aquí dentro, antes de cerrar el body -->
+    <script src="script.js"></script>
+</body>
+</html>
+<a href="contacto.html">Contacto</a>

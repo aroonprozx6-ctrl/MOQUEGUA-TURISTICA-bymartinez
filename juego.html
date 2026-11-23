@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego - Moquegua Turística</title>
+    <!-- Hoja de estilos principal -->
+    <link rel="stylesheet" href="style3.css">
+    <!-- Hoja de estilos específica para el juego -->
+    <link rel="stylesheet" href="juego.css">
+    <!-- Librería Tone.js para efectos de sonido -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.49/Tone.js"></script>
+</head>
+<body>
+    <header>
+        <img src="imagenes/logo.png" alt="Logo Moquegua Turística">
+        <h1>Moquegua Turística</h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="lugares.html">Lugares turísticos</a>
+            <a href="galeria.html">Galería</a>
+            <a href="juego.html" class="activo">Juego</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Juegos de Moquegua</h2>
+        <p>Demuestra cuánto sabes sobre la región o participa en la recolección de sus productos típicos.</p>
+
+        <section class="contenedor-juego">
+            <!-- Selector de modo de juego -->
+            <div class="opciones-juego">
+                <button id="btn-modo-trivia" class="btn-modo activo">Trivia Turística</button>
+                <button id="btn-modo-arcade" class="btn-modo">Recolector de Moquegua</button>
+            </div>
+
+            <!-- MODO TRIVIA -->
+            <div id="seccion-trivia" class="panel-trivia">
+                <div class="marcador">
+                    <span>Puntuación: <span id="puntos-trivia">0</span></span>
+                    <span>Pregunta: <span id="num-pregunta">1</span>/5</span>
+                </div>
+                <div class="pregunta-card">
+                    <h3 id="texto-pregunta">Cargando pregunta...</h3>
+                    <div id="lista-opciones" class="opciones-lista"></div>
+                </div>
+                <div id="feedback-trivia"></div>
+                <button id="btn-siguiente" class="boton oculto">Siguiente Pregunta</button>
+            </div>
+
+            <!-- MODO ARCADE -->
+            <div id="seccion-arcade" class="oculto">
+                <div class="marcador">
+                    <span>Puntos: <span id="puntos-arcade">0</span></span>
+                    <span>Vidas: <span id="vidas-arcade">3</span></span>
+                </div>
+                <canvas id="canvasJuego" width="600" height="350"></canvas>
+                <p><small>Usa las flechas <strong>Izquierda</strong> y <strong>Derecha</strong> del teclado para moverte y recolectar productos.</small></p>
+                <button id="btn-reiniciar-arcade" class="boton">Reiniciar Juego</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>2026 Moquegua Turística</p>
+    </footer>
+
+    <!-- Lógica de JavaScript en archivo independiente -->
+    <script src="juego.js"></script>
+</body>
+</html>

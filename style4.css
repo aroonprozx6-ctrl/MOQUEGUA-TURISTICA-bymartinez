@@ -1,0 +1,142 @@
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: #F5F9F5;
+    color: #333333;
+}
+
+/* Encabezado */
+header {
+    background-color: #1B5E20;
+    padding: 20px 40px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+header img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+h1 {
+    color: white;
+    font-size: 32px;
+    margin: 0;
+}
+
+/* Menú de navegación */
+nav {
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover, nav a.activo {
+    background-color: #2E7D32;
+}
+
+/* Contenido Principal */
+main {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+main h2 {
+    color: #1B5E20;
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+main > p {
+    color: #555;
+    font-size: 17px;
+    margin-bottom: 30px;
+}
+
+/* Contenedor del Formulario de Contacto (Tarjeta centrada y ordenada) */
+.seccion-contacto {
+    background-color: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    text-align: left;
+}
+
+.campo {
+    margin-bottom: 22px;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #1B5E20;
+    font-size: 15px;
+}
+
+.campo input, 
+.campo textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.campo input:focus, 
+.campo textarea:focus {
+    outline: none;
+    border-color: #2E7D32;
+    box-shadow: 0 0 0 4px rgba(46, 125, 50, 0.15);
+}
+
+/* Botón de envío moderno */
+.boton {
+    display: block;
+    width: 100%;
+    background-color: #1B5E20;
+    color: white;
+    border: none;
+    text-decoration: none;
+    text-align: center;
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 10px;
+}
+
+.boton:hover {
+    background-color: #2E7D32;
+    transform: translateY(-2px);
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    background-color: #1B5E20;
+    color: white;
+    padding: 20px;
+    margin-top: 60px;
+    font-size: 15px;
+}

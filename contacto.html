@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto - Moquegua Turística</title>
+    <link rel="stylesheet" href="style4.css">
+</head>
+<body>
+    <header>
+        <img src="imagenes/logo-moquegua.jpg" alt="Logo Moquegua Turística">
+        <h1>Moquegua Turística</h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="lugares.html">Lugares turísticos</a>
+            <a href="galeria.html">Galería</a>
+            <a href="juego.html">Juego</a>
+            <a href="contacto.html" class="activo">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Contacto</h2>
+        <p>¿Tienes dudas, sugerencias o quieres compartir información sobre Moquegua? Escríbenos.</p>
+
+        <!-- Formulario dentro de una tarjeta -->
+        <section class="seccion-contacto">
+            <form action="#" method="POST">
+                <div class="campo">
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+                </div>
+
+                <div class="campo">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+                </div>
+
+                <div class="campo">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                </div>
+
+                <button type="submit" class="boton">Enviar Mensaje</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>2026 Moquegua Turística</p>
+    </footer>
+</body>
+</html>
